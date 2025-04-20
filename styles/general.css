@@ -1,0 +1,115 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  /* This style below will be inherited */
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+}
+
+/* General dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Dark mode for the header (navbar) */
+body.dark-mode .header {
+  background-color: #1e1e1e; /* Darker shade for the header */
+  color: #ffffff; /* White text */
+}
+
+/* Dark mode for the sidebar */
+body.dark-mode .sidebar {
+  background-color: #1e1e1e; /* Darker shade for the sidebar */
+  color: #ffffff; /* White text */
+}
+
+/* Dark mode for tooltips */
+body.dark-mode .tooltip {
+  background-color: #333; /* Dark background for tooltips */
+  color: #ffffff; /* White text for tooltips */
+}
+
+/* Dark mode for video previews */
+body.dark-mode .video-preview {
+  background-color: #1e1e1e; /* Darker shade for video previews */
+  color: #ffffff; /* White text */
+}
+
+/* Dark mode for links */
+body.dark-mode a {
+  color: #ffffff; /* White text for links */
+}
+
+/* Dark mode for buttons */
+body.dark-mode button {
+  background-color: #333; /* Dark button background */
+  color: #ffffff; /* White text for buttons */
+}
+
+/* Dark mode for icons */
+body.dark-mode img {
+  filter: brightness(1.5); /* Brighten icons for better visibility */
+}
+
+/* Dark mode for video titles */
+body.dark-mode .video-title,
+body.dark-mode .video-author,
+body.dark-mode .video-stats {
+  color: #ffffff; /* White text for video details */
+}
+
+/* Dark mode for icons (optional, if needed) */
+body.dark-mode img {
+  filter: brightness(0.8); /* Dim icons slightly for dark mode */
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#dark-mode-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#dark-mode-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.search-button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Dark mode for the search input */
+body.dark-mode .search-bar {
+  background-color: #121212; /* Black background */
+  color: #ffffff; /* White text */
+  border: none; /* Optional: Add a border for better visibility */
+}
+
+/* Dark mode for the placeholder text in the search input */
+body.dark-mode .search-bar::placeholder {
+  color: #888; /* Light gray placeholder text */
+}
+
+/* Ensure the upload icon container remains gray in dark mode */
+.upload-icon-container, .notifications-icon-container, .youtube-apps-icon-container {
+  background-color: rgba(245, 245, 245, 0.555) /* Gray background */;
+  color: #ffffff; /* Optional: White text for better contrast */
+}
